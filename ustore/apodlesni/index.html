@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="TV-Shop" />
+    <meta name="keywords" content="store shop" />
+    <meta name="author" content="Dmitro Zahorovskiy" />
+    <meta name="author" content="Andrii Podliesnyi" />
+    <title>TV-Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/icon/tv.png" type="image/png">
+
+</head>
+
+<body>
+    <!--  основной контейнер -->
+    <div class="container">
+        <!-- шапка магазина баннер -->
+        <header class="header">
+            <div class="logo"><img src="assets/icon/Group 1.svg" alt="logo"></div>
+            <div class="description">
+                <ul>
+                    <li class="top-menu" onclick="displayCatalog()">Каталог<a class="nav" href="#"></a></li>
+                    <li class="top-menu" onclick="buy()">Как купить<a class="nav" href="#"></a></li>
+                    <li class="top-menu" onclick="about()">О магазине<a class="nav" href="#"></a></li>
+                    <li class="top-menu" id="end-top-menu" onclick="contact()">Контакты<a class="nav" href="#"></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- блок навигации после шапке -->
+        <div class="head">
+            <!-- центральный блок с поиском и корзиной -->
+            <div class="center-head">
+                <!-- бургер меню для маленького экрана -->
+                <nav class="burgerMenu">
+                    <ul class="leftMenu" id="close">
+                        <div id="closeBurger" onclick="closeBurger()">&#9746</div>
+                        <li id="burgerCatalog" onclick="displayCatalog()"><a class="navi" href="#"></a>Каталог</li>
+                        <li onclick="buy()"><a class="navi" href="#"></a>Как купить</li>
+                        <li onclick="about()"><a class="navi" href="#"></a>О магазине</li>
+                        <li onclick="contact()"><a class="navi" href="#"></a>Контакты</li>
+                    </ul>
+                </nav>
+                <div class="burger" onclick="openBurger()">
+                    <img id="burger" src="assets/icon/Daco_3884885.png" alt="">
+                </div>
+                <div class="catalog" onclick="displayCatalog()">каталог</div>
+                <div class="search">
+                    <div class="search-field">
+                        <input class="field" type="text" placeholder="Найти товары">
+                    </div>
+                </div>
+                <div class="search-button">Найти</div>
+                <div class="search-button-small">&#128269</div>
+                <div class="cart" onclick="displayCart()">
+                    <div class="iconCart">
+                        <img src="assets/icon/cart.png" alt="">
+                        <div class="countCart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- блок пути каталога товаров -->
+        <div class="wood">
+            <div class="wood-box">
+                <div class="wood-home">Интернет магазин <span>&gt</span></div>
+            </div>
+        </div>
+        <!-- шапка сортировки товаров -->
+        <div class="top-shop">
+            <div class="top-shop-box">
+                <!-- контейнер кнопки фильтрации для малого экрана -->
+                <div class="left-top">
+                    <div class="filter" onclick="displayFilter()">Фильтры</div>
+                </div>
+                <!-- контейнер с блоком выбора сортировки -->
+                <div class="right-top">
+                    <div class="sort">
+                        <div id="sort-select" onclick="sortClick()"></div>
+                        <ul class="sort-box">
+                            <li id="sort" onclick="tagClick()"></li>
+                            <li id="sort" onclick="abcClick()"></li>
+                            <li id="sort" onclick="ascClick()"></li>
+                            <li id="sort" onclick="descClick()"></li>
+                        </ul>
+                    </div>
+                    <div id="string" class="sort-string sort-noactive" onclick="displayString()"><img class="sortline" src="assets/icon/sortline.svg" alt="sortline"></div>
+                    <div id="block" class="sort-block sort-active" onclick="displayBlock()"><img class="sorttabel" src="assets/icon/sorttabel.svg" alt="sortline"></div>
+                </div>
+            </div>
+        </div>
+        <div id="cartBox" class="cart-boxx">
+            <div id="closeCart" onclick="closeCart()">&#9746</div>
+            <div class="cart-top">Корзина</div>
+            <div class="cart-main"></div>
+            <div class="cart-bottom">
+                <div class="clearCart-active clearCart" onclick="clearLocalCart()">Очистить корзину</div>
+                <div class="allPrice"></div>
+            </div>
+        </div>
+        <!-- главная секция -->
+        <section class="main">
+            <!-- о магазине скрыт или виден -->
+            <div id="about" class="aclose">about</div>
+            <!-- как купить скрыт или виден -->
+            <div id="buy" class="aclose">how to buy</div>
+            <!-- контакты скрыт или виден -->
+            <div id="contact" class="aclose">contact</div>
+            <!-- витрина магазина -->
+            <div id="shop" class="shop">
+                <!-- меню слева с фильтрами -->
+                <div class="menu">
+                    <!-- иконка закрытия меню -->
+                    <div id="closeFilter" onclick="displayFilter()">&#9746</div>
+                    <!-- блок кнопок очистки и применения фильтров -->
+                    <div class="filterButtons">
+                        <div class="clearFilter" onclick="toClear()">Очистить</div>
+                        <div class="addFilter" onclick="allFilter()">Применить</div>
+                    </div>
+                    <!-- контейнер для блока фильтров -->
+                    <!-- контейнер фильтрации по наличию товаров -->
+                    <div class="filter-header">Наличие:</div>
+                    <div class="filter-sklad">
+                        <form id="filter-sklad">
+                            <input type="radio" id="allGoods" name="goods" value="allGoods" checked>
+                            <label for="allGoods">Все товары</label><br>
+                            <input type="radio" id="avGoods" name="goods" value="avGoods">
+                            <label for="avGoods">Товары в наличии</label><br>
+                        </form>
+                    </div>
+                    <!-- контейнер фильтрации по цене -->
+                    <div class="filter-header">Цена:</div>
+                    <div class="filter-cost" id="filter-cost">
+                        <div class="price-slider"><span>
+                                <input id="get_num" value="3200" type="number" min="3200" max="100000" /> -
+                                <input id="get_num1" value="100000" type="number" min="3200" max="100000" /></span>
+                            <input id="numb-rang" value="3200" min="3200" max="100000" step="100" type="range" />
+                            <input id="numb-rang" value="100000" min="3200" max="100000" step="100" type="range" />
+                        </div>
+                    </div>
+                    <!-- контейнер фильтрации по производителю -->
+                    <div class="filter-header">Производитель:</div>
+                    <form class="filter-type" id="filter-type"></form>
+                </div>
+                <!-- каталог товаров -->
+                <div class="showcase">
+                    <div id="tov" class="goods">
+
+                    </div>
+                    <div id="stran" class="pages">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- панель контактов и обратной связи -->
+        <footer class="footer">
+            <div class="footer-box">
+                <div class="text-box">
+                    <!-- блок тестовых ссылок на контакты  -->
+                    <div class="text-contact" onclick="buy()">Как купить</div>
+                    <div class="text-contact" onclick="about()">О магазине</div>
+                    <div class="text-contact" onclick="contact()">Контакты</div>
+                    <div class="text-label">
+                        <!-- блок копирайта  -->
+                        <div>&#169 Все права защищены 2021</div>
+                    </div>
+                </div>
+                <div class="icon-box">
+                    <!-- блок иконо со ссылками на социальные сети -->
+                    <div class="icon-contact">
+                        <img class="contact-icon" src="assets/icon/instagram-128.png" alt="">
+                    </div>
+                    <div class="icon-contact">
+                        <img class="contact-icon" src="assets/icon/facebook-7-128.png" alt="">
+                    </div>
+                    <div class="icon-contact">
+                        <img class="contact-icon" src="assets/icon/telegram-3-128.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/filters.js"></script>
+
+</body>
+
+</html>
