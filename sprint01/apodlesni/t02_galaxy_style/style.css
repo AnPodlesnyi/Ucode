@@ -1,0 +1,39 @@
+body {
+    background: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+table tr td img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 25px;
+}
+td{
+    border: 2px solid white;
+}
+.row1 {
+    background-color: #222222;
+}
+.row2 {
+    background-color:#493f73;
+}
+.row3 {
+    background-color:#e7af2f;
+}
+.row4 {
+    background-color:#1c998a;
+}
+.row5 {
+    background-color:#ac3931;
+}
+.row6{
+    background-color: black;
+    padding: 10px;
+}

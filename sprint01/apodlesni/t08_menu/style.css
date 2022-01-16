@@ -1,0 +1,99 @@
+header {
+    max-width: 2200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 1px;
+    margin: 0px 40px 0px 40px;
+}
+.vmenu:after {
+    content: "";
+    display: table;
+}
+.vmenu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.vmenu > ul li a {
+    display: block;
+    padding: 10px;
+
+}
+.vmenu a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #464664;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: lavender;
+    border-bottom: 5px solid #c76c42;
+  }
+  .vmenu a:hover {
+      background-color: yellow;
+  }
+.mymenu {
+    max-width: 2200px;
+    padding: 1px;
+    margin: 0px 40px 0px 40px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.navmenu {
+position: relative;
+display: inline-block;
+}
+.navmenu li {
+    display: inline;
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+}
+.sub-menu {
+    position:absolute;
+    display: none;
+    right: 237px;
+}.sub-menu1 {
+    position:absolute;
+    display: none;
+    left: 255px;
+}
+.sub1-menu{
+    position:absolute;
+    display: none;
+    left: 77px;
+}
+.sub2-menu{
+    position:absolute;
+    display: none;
+    left: 115px;
+}
+
+.navmenu ul li:hover > ul{
+    display: block;
+}
+.navmenu > ul > li::after {
+    font-size: .5em;
+    display: inline;
+    position: relative;
+}
+.vmenu > ul {
+    display: flex;
+    justify-content: center;
+}
+.vmenu > ul li {
+    position: relative;
+    min-width: 150px;
+}
+.vmenu li > ul li a {
+    padding: 10px;
+    text-transform: none;
+}
+.vmenu > ul li > a i.fa{
+    position:absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}

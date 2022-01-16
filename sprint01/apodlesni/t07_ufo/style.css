@@ -1,0 +1,26 @@
+.img1 {
+    width: 300px;
+    height: 300px;
+    margin: 0px 0px 30px 0px ;
+}
+.ufo1 {
+    margin-top: 15px;
+    width: 300px;
+    display: inline;
+    padding: 10px;
+}
+.img1:hover ~ .list td:nth-child(2n+1) { 
+    visibility: hidden;
+}
+.img1:hover ~ .list1 td:nth-child(2n) {
+    visibility: hidden;
+}
+.img1:hover ~ .list2 td:nth-child(2n+1) { 
+    visibility: hidden;
+}
+.img1:hover ~ .list3 td:nth-child(2n) {
+    visibility: hidden;
+}
+.img1:hover ~ .list4 td:nth-child(2n+1) { 
+    visibility: hidden;
+}

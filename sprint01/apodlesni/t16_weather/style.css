@@ -1,0 +1,60 @@
+
+body {
+    font-family: lato;
+}
+header {
+    margin: 20px 0px 20px 0px;
+    font-family: lato;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    padding: 1px;
+}
+.blo {
+    position: inherit;
+    width: 700px;
+    height: 200px;
+}
+.o1 {
+    position: relative;
+    width: 90px;
+    height: 155px;
+    margin: 2px;
+    float: left;
+}
+.o1:hover {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 155px;
+    float: left;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.cf {
+    position: sticky;
+    bottom: 0;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(56, 187, 187);
+    margin: -24px 0px 0px 0px;
+}
+img {
+    text-align: center;
+    width: 75px;
+    height: auto;
+    margin: 10px 10px 0px 10px;
+}
+.pod {
+    margin: 3px 0px 0px 0px;
+    font-size: 2em;
+    font-weight: 700;
+}
+.dat {
+    font-size: 1.5em;
+    font-weight: 400;
+}

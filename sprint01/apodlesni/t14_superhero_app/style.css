@@ -1,0 +1,47 @@
+.Container {
+    border: 2px solid gray;
+    width: 1090px;
+    height: 550px;
+    font-family: 'Times New Roman', Times, serif;
+}
+legend {
+    margin: 20px 20px 0px 20px;
+}
+.about {
+    border: 2px solid grey;
+    padding: 20px 20px 20px 20px;
+    width: 1000px;
+    height: 200px;
+    margin: 20px 20px -20px 20px;
+}
+.Powers {
+    border: 2px solid gray;
+    width: 1000px;
+    height: 80px;
+    margin: 20px 20px -20px 20px;
+    padding: 20px 20px 20px 20px;
+}
+.Origin {
+    border: 2px solid gray;
+    width: 1000px;
+    height: 40px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+}
+input [type="number"] {
+    width: 50px;
+}
+input{
+    margin: 0px 5px 0px 0px;
+}
+textarea {
+    width: 450px;
+    font-family: 'Times New Roman', Times, serif
+
+}
+.level {
+    padding: 20px 0px 0px 0px;
+}
+.send {
+    margin: 0px 0px 0px 20px;
+}

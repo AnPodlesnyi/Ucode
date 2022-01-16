@@ -1,0 +1,76 @@
+html {
+    font-size: .952vmin;
+  }
+  
+  body {
+    margin: 1vh auto;
+    max-width: 35vmin;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  .match {
+    position: relative;
+    padding-top: 272%;
+  }
+  
+  .match > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .stick {
+    top: 45%;
+    bottom: .5%;
+    width: 12%;
+    border: 1px solid #A34639;
+    background: linear-gradient(to right, #a54d41, #E5A56B);
+    z-index: -1;
+  }
+  
+  .top {
+    top: 37%;
+    bottom: 51.5%;
+    width: 24%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: #472814;
+    filter: drop-shadow(0 -.5rem 3rem white);
+  }
+  
+  .top::after {
+    content: "";
+    position: absolute;
+    top: -2.5%;
+    height: 30%;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50% / 80% 80% 20% 20%;
+    background: white;
+    filter: blur(.8rem);
+    transform: scale(2);
+  }
+  
+  .fire::before, .fire::after {
+    content: "";
+    position: absolute;
+    left: -1%;
+    right: -1%;
+    padding-top: 102%;
+    bottom: 52%;
+    border-radius: 0 50% 50% 50% / 50% 50% 50% 50%;
+    transform: scaleX(.9) rotate(45deg);
+    background: linear-gradient(-45deg, #fff019, #f51e0a);
+  }
+  
+  .fire::before {
+    filter: blur(2rem);
+  }

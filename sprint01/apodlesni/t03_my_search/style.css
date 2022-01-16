@@ -1,0 +1,28 @@
+.wrapper {
+    position: relative;
+    width: 70%;
+    height: 2em;
+}
+input {
+    float: left;
+    box-sizing: border-box;
+    padding-right: 15px;
+    width: 50%;
+    color: green;
+}
+
+button {
+    position:static;
+    top: 0;
+    right: 10px;
+    width: 50px;
+    height: 21px;
+    color: green;
+}
+button:hover {
+    color:red;
+}
+input:hover {
+    border:2px solid red;
+    color: red;
+}

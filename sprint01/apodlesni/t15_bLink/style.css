@@ -1,0 +1,39 @@
+a[href$="https://www.freecodecamp.org/"] {
+    color: green;
+  }
+  a[href$="https://www.sitemaps.org/"] {
+    color: green;
+  }
+  li:nth-child(3)::after {
+    content: "\21D2";
+    color: coral;
+  }
+  li:nth-child(5):after {
+    content: "\21D2";
+    color: coral;
+  }
+  li:nth-child(5):hover:after {
+    content: "\2026last symbol is 'a'";
+    font-family: 'Dancing Script', cursive;
+    color: coral;
+    text-decoration: blue underline;
+  }
+  a:nth-child(2n):before {
+    content: "\00BB";
+    padding: 0px 10px 0px 0px;
+}
+  a:nth-child(-n+7):before {
+    content: "\00BB";
+    padding: 0px 10px 0px 0px;
+}
+
+  li:nth-child(7)::before{
+    content: "\00D7";
+    color: red;
+    padding: 0px 10px 0px 0px;
+  }
+  li:nth-child(9)::before{
+    content: "\00D7";
+    color: red;
+    padding: 0px 10px 0px 0px;
+  }

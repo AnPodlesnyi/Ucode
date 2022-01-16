@@ -1,0 +1,230 @@
+.grid {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: auto;
+    padding: 10px;
+}
+.grid__body1 {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-flow minmax(350px, 1fr) );
+    grid-gap: 10px;
+    background-color: #dab334;
+    padding: 10px;
+    margin: 20px 20px 70px 20px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m m c c c v v v f f f"
+}
+@media only screen and (max-width: 1024px) {
+  [class*="grid__body1"] {
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "m m m m m m c c c c c c"
+      "v v v v v v f f f f f f"
+  }
+     h2 { font-size: 2.2rem; }
+}
+@media only screen and (min-width: 1024px){
+  h2 {
+   font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  [class*="grid__body1"] {
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "m m m m m m m m m m m m"
+      "c c c c c c c c c c c c"
+      "v v v v v v v v v v v v"
+      "f f f f f f f f f f f f"
+  }
+  h2 { font-size: 1.5rem; }
+}
+@media only screen and (max-width: 320px) {
+  [class*="grid__body1"] {
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "m m m m m m m m m m m m"
+      "c c c c c c c c c c c c"
+      "v v v v v v v v v v v v"
+      "f f f f f f f f f f f f"
+  }
+  h2 { font-size: 1rem; }
+  p { font-size: 0.7rem;}
+  
+}
+
+.grid__body1 > div {
+    background-color: rgba(241, 241, 241, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .item1 {
+    grid-area: h;
+    text-align: center;
+  }
+  .item2 {
+    grid-area: m;
+  }
+  .item3 {
+    grid-area: c;
+  }
+  img{
+      width: 150px;
+      height: 150px;
+      margin: 20px 0px 0px 0px;
+
+  }
+  code {
+      font-size: 10px;
+      margin-top: 0.5em; 
+      margin-bottom: 1em;
+  }
+  h4 {
+text-align: left;
+padding: 15px;
+margin: 20px 0px 0px 20px;
+  }
+  li {
+    text-align: left;
+    font-size: small;
+  margin: 0px 0px 0px 10px;
+  padding: 5px;
+  }
+h2{
+margin: -10px;
+text-align: center;
+  }
+p{
+  text-align: left;
+    font-size: small;
+    padding: 15px;
+    margin: 20px 0px 0px 30px;
+}
+.item4 {
+  margin: 20px;
+  grid-area: v;
+}
+.item5 {
+  grid-area: f;
+}
+.item45 {
+  margin: 20px;
+  width: 150px;
+  height: 248px;
+}
+
+/*             блок три                */
+  .grid__body2 {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-flow minmax(350px, 1fr) );
+    grid-gap: 10px;
+    background-color: #c9680d;
+    padding: 10px;
+    margin: 20px 20px 70px 20px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m m m m m c c c c c c"
+        "v v v f f f x x x s s s"
+}
+@media only screen and (max-width: 1024px) {
+  [class*="grid__body2"] {
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "m m m m m m c c c c c c"
+      "v v v v v v f f f f f f"
+      "x x x x x x s s s s s s"
+  }
+     h2 { font-size: 2.2rem; }
+}
+@media only screen and (min-width: 1024px){
+  h2 {
+   font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  [class*="grid__body2"] {
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "c c c c c c c c c c c c"
+    "v v v v v v f f f f f f"
+    "x x x x x x x x x x x x"
+    "s s s s s s s s s s s s"
+  }
+  h2 { font-size: 1.5rem; }
+  img.Osi_img {
+    width: 200px;
+    height: 250px;
+  }
+  img.logo3 {
+    width: 150px;
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  [class*="grid__body2"] {
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "m m m m m m m m m m m m"
+      "c c c c c c c c c c c c"
+      "v v v v v v v v v v v v"
+      "f f f f f f f f f f f f"
+      "x x x x x x x x x x x x"
+      "s s s s s s s s s s s s"
+  }
+  h2 { font-size: 1rem; }
+  p { font-size: 0.7rem;}
+  img.logo3 {
+    width: 150px;
+    height: 70px;
+  }
+}
+.grid__body2 > div {
+    background-color: rgba(241, 241, 241, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .item11 {
+    grid-area: h;
+  }
+  .item22 {
+    grid-area: m;
+  }
+  .item33 {
+    grid-area: c;
+  }
+  .item44 {
+    grid-area: v;
+  }
+  .item55 {
+    grid-area: f;
+  }
+  .item66 {
+    grid-area: x;
+  }
+  .item77 {
+    grid-area: s;
+  }
+  .logo3 {
+    width: 200px;
+    height: 100px;
+    padding: 50px 10px 0px 10px;
+  }
+  h5{
+    margin: -5px 10px 0px 0px;
+  }
+  h6 {
+    text-align: left;
+    margin: -30px 10px 0px 10px;
+    font-size: 4pt;
+  }
+  .Osi_img {
+    width: 350px;
+    height: 350px;
+    margin: -50px 0px -30px 0px;
+  }
+  

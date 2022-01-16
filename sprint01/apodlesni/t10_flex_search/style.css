@@ -1,0 +1,25 @@
+header{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.search{
+    flex:1;
+    display:flex;
+}
+.search:before{
+    width:70px;
+    background-color: rgb(168, 167, 167);
+}
+.searchInput {
+    border-style: 1px solid;
+    flex:1;
+    height: 30px;
+    border-radius: 3px;
+}
+.searchBtn {
+    width: 60px;
+    height: 31px;
+    background-color: #dadada;
+    color: rgb(143, 143, 143);
+    margin: 2px 0px 0px 0px;
+}
