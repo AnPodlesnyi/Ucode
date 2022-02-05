@@ -1,0 +1,65 @@
+body {
+    font-family: "Arial", sans-serif;
+}
+
+section {
+    text-align: center;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px;
+}
+
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 150px;
+    height: 150px;
+    padding: 30px 0px 0px 0px;
+    box-shadow: 0 0 0 2px #333333;
+    border: 3px solid #f0b727;
+    cursor: pointer;
+    background-color: whitesmoke ;
+    line-height: 100px;
+    font-size: 100px;
+}
+.cel{
+    width: 150px;
+    background-color: rgb(155, 155, 155);
+    box-shadow: 0 0 0 2px #333333;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    z-index: 1;
+}
+.pl1{
+    margin: 25px;
+    padding: 5px 0px 0px 0px;
+    width: 100px;
+    height: 20px;
+    background-color: yellowgreen;
+}
+.pl2{
+    margin: -15px 25px 0px 25px;
+    padding: 5px 0px 0px 0px;
+    width: 100px;
+    height: 20px;
+    background-color: yellowgreen;
+}
+.num{
+    margin: 10px;
+}
+.numb{
+    margin: 25px;
+    width: 100px;
+    height: 100px;
+}
+.game--restart{
+    width: 70px;
+    background-color: rgb(109, 109, 109);
+    color: white;
+    border-radius: 5px;
+    margin: 110px 0px 0px 0px;
+}

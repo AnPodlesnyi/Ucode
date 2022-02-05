@@ -1,0 +1,60 @@
+.container {
+    display: block;
+}
+.knop {
+    max-width: 61%;
+    padding: 20px;
+    height: auto;
+    overflow:hidden
+}
+.add{
+    float:left;
+    width: 150px;
+    margin: 0px 100px 0px 0px;
+    border-radius: 10px;
+}
+p{
+    margin: 0px 0px 0px 0px;
+}
+#send{
+    background-color: rgb(21, 255, 177);
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 0px 350px 0px 0px;
+}
+#send1{
+    background-color: rgb(207, 207, 207);
+    width: 150px;
+    height: 40px;
+    margin: 0px 0px 0px 20px;
+    border-radius: 7px;
+}
+.clear{
+    float: right;
+    width: 150px;
+    border-radius: 10px;
+}
+.teinp{
+    text-align: inherit;
+}
+.textinp{
+    width: 580px;
+    padding:10px ;
+    margin: 0px 0px 0px 20px;
+    background-color: beige;
+    border-style: outset;
+}
+.notes{
+    width: 580px;
+    padding: 10px;
+    margin: 7px 0px 0px 20px;
+    background-color:beige;
+    border-style: outset;
+}
+#notes_v {
+    width: 550px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
