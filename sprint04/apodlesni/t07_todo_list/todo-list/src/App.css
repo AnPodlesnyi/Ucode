@@ -1,0 +1,68 @@
+.App {
+    text-align: center;
+    background-color: #202338;
+    color: white;
+}
+.butt {
+    border-radius: 20px;
+    background-color: #374e4f;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+input {
+    width: 250px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.text {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #374e4f;
+    border-radius: 20px;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 200px;
+}
+.App .item-todo {
+    padding: 5px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.App .item-todo .item-text {
+    display: inline-block;
+    cursor: pointer;
+}
+.App .item-todo .item-delete {
+    cursor: pointer;
+    float: right;
+    font-size: 22px;
+    position: relative;
+    left: -4px;
+    bottom: 5px;
+}
+p {
+    font-size: 20px;
+}
+.che {
+    height: 17px;
+    width: 17px;
+}
+.item-text {
+    display: inline-block;
+    cursor: pointer;
+}
+.strike {
+    text-decoration: line-through;
+    color: #525c79;
+}

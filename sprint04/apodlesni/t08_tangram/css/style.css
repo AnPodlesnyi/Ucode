@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+.contr {
+    width: 400px;
+    height: 400px;
+    border: 5px solid rgb(126, 70, 6);
+}
+.figure {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.figure-0 {
+    top: 433px;
+    left: 400px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid #f95959;
+}
+.figure-1 {
+    top: 263px;
+    left: 300px;
+    border-top: 200px solid transparent;
+    border-left: 200px solid #5cb85c;
+    border-bottom: 200px solid transparent;
+}
+.figure-2 {
+    top: 433px;
+    right: 750px;
+    float: right;
+    border-top: 200px solid #f0ad4e;
+    border-left: 200px solid transparent;
+}
+.figure-3 {
+    top: 533px;
+    right: 550px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid #f459f9;
+}
+.figure-4 {
+    right: 450px;
+    top: 433px;
+    border-top: 100px solid transparent;
+    border-right: 100px solid #000000;
+    border-bottom: 100px solid transparent;
+}
+.figure-5 {
+    right: 259px;
+    top: 493px;
+    transform: rotate(135deg);
+    width: 142px;
+    height: 142px;
+    background-color: blue;
+}
+.figure-6 {
+    top: 470px;
+    left: 1400px;
+    width: 110px;
+    height: 170px;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
+    transform: skew(30deg);
+    background: #d4d5da;
+}
+.activs {
+    opacity: 0.7; /* Значение прозрачности */
+    filter: alpha(Opacity=70);
+}
