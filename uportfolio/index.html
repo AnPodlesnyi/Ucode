@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <nav class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="#about" class="header-menu__link"><img src="assets/logo.png" alt="Logo"
+                                    class="logo"></a>
+                        </li>
+                        <li class="header-menu__item"><a href="#about" class="header-menu__link">About</a></li>
+                        <li class="header-menu__item"><a href="#projects" class="header-menu__link">Projects</a></li>
+                        <li class="header-menu__item"><a href="#skills" class="header-menu__link">Skills</a></li>
+                        <li class="header-menu__item"><a href="#contacts" class="header-menu__link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#about">About</a></li>
+                        <li><a class="menu__item" href="#projects">Projects</a></li>
+                        <li><a class="menu__item" href="#skills">Skills</a></li>
+                        <li><a class="menu__item" href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container__flex">
+                <div class="main-left">
+                    <div class="main-left__photo">
+                        <img src="assets/apodlesni.png" alt="photo" class="main__img">
+                    </div>
+                    <section class="contacts" id="contacts">
+                        <h2 class="contacts_head">Contacts</h2>
+                        <div class="separator separator__yellow"></div>
+                        <div class="contacts__place">
+                            <h3 class="name__place">Name:</h3>
+                            <h4 class="name__place__separator">Andrii Podlesnyi</h4>
+                            <h3 class="name__place">Address:</h3>
+                            <h4 class="name__place__separator">Kyiv, Ukraine</h4>
+                            <h3 class="name__place">Phone number:</h3>
+                            <h4 class="name__place__separator"><a href=”tel:+380682092515” class="phone_place"
+                                    target="_blank">+38 (068)
+                                    209-25-15</a></h4>
+                            <h3 class="name__place">Email:</h3>
+                            <h4 class="name__place__separator"><a class="email__place"
+                                    href="mailto:an.podlesnyi@gmail.com">an.podlesnyi@gmail.com</a></h4>
+                        </div>
+                    </section>
+                    <section class="skills" id="skills">
+                        <h2 class="contacts_head">Skills</h2>
+                        <div class="separator separator__yellow"></div>
+                        <ul class="skil__list">
+                            <li class="skil__items html_skil">
+                                <h4>HTML</h4>
+                            </li>
+                            <li class="skil__items css_skil">
+                                <h4>CSS</h4>
+                            </li>
+                            <li class="skil__items sass_skil">
+                                <h4>SASS</h4>
+                            </li>
+                            <li class="skil__items js_skil">
+                                <h4>JavaScript</h4>
+                            </li>
+                            <li class="skil__items figma_skil">
+                                <h4>Figma</h4>
+                            </li>
+                            <li class="skil__items git_skil">
+                                <h4>Git</h4>
+                            </li>
+                            <li class="skil__items webpack_skil">
+                                <h4>Webpack</h4>
+                            </li>
+                        </ul>
+                        <h2 class="contacts_head">Languages</h2>
+                        <div class="separator separator__yellow"></div>
+                        <div class="main-left__lang">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h3>Ukrainian</h3>
+                                    </td>
+                                    <td>
+                                        <p>Native</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>English</h3>
+                                    </td>
+                                    <td>
+                                        <p>A2-B1</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>Russian</h3>
+                                    </td>
+                                    <td>
+                                        <p>Advanced</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+                <div class="main-center">
+                    <div class="main__header">
+                        <h1 class="main__name">Andrii Podlesnyi</h1>
+                        <h3 class="main__name__footer">Junior frontend developer</h3>
+                    </div>
+                    <div class="main__quote">
+                        <h3 class="quote__text">
+                            `If you can't find something on the Internet, just translate your request into English and
+                            you will find what you were looking for with 99% accuracy =)`
+                        </h3>
+                    </div>
+                    <div class="main__body">
+                        <section class="main__about" id="about">
+                            <div class="about__body">
+                                <h3 class="about-head__text">About me</h3>
+                                <div class="separator separator__black"></div>
+                                <p class="about-head__body">Hi, I'm a fun-loving, goal-oriented guy who has been
+                                    interested in computers since an
+                                    early age. I like to immediately see the result of my work, so I went to the Front.
+                                    <br> I believe that positive people find solutions twice as fast as others.
+                                    <br>I am looking for a strong team in which I can develop my skills and make
+                                    beautiful
+                                    interactive websites.
+                                </p>
+                                <h3 class="about-head__text">EDUCATION</h3>
+                                <div class="separator separator__black"></div>
+                                <div class="about-education">
+                                    <div class="education__left">
+                                        <h3>Bachelor</h3>
+                                        <p>National Aviation University, Kyiv</p>
+                                    </div>
+                                    <div class="education__right">
+                                        <p>Sep 2017 - Jul 2021</p>
+                                    </div>
+                                </div>
+                                <h3 class="about-head__text">Courses</h3>
+                                <div class="separator separator__black"></div>
+                                <div class="about-education">
+                                    <div class="education-flex">
+                                        <div class="education__left">
+                                            <h3>JavaScript/Front-end. Stage 0</h3>
+                                            <p>RS Schools</p>
+                                        </div>
+                                        <div class="education__right">
+                                            <p>Jun 2022 - in progress...</p>
+                                        </div>
+                                    </div>
+                                    <div class="education-flex">
+                                        <div class="education__left">
+                                            <h3>JavaScript + React</h3>
+                                            <p>Udemy</p>
+                                        </div>
+                                        <div class="education__right">
+                                            <p>Apr 2022 - in progress...</p>
+                                        </div>
+                                    </div>
+                                    <div class="education-flex">
+                                        <div class="education__left">
+                                            <h3>Front-End</h3>
+                                            <p>Ucode IT Academy</p>
+                                        </div>
+                                        <div class="education__right">
+                                            <p>Sep 2021 - Feb 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="main__projects" id="projects">
+                            <div class="projects__body">
+                                <h3 class="about-head__text">Projects</h3>
+                                <div class="separator separator__black"></div>
+                                <div class="prodjects__wrapper">
+                                    <div class="prodjects__item">
+                                        <a href="https://dollsolga.com.ua/" target="_blank">
+                                            <img src="assets/projects/dolls.png" alt="projects_dolls"
+                                                class="projects__png">
+                                        </a>
+                                        <div class="projects__text">
+                                            <h3 class="projects__name">Dolls Olga</h3>
+                                            <div class="projects-text__desc">
+                                                <p>The one page site is written in pure HTML, SASS, JS, Swiper.js using
+                                                    PHP,
+                                                    Ajax to submit the order form.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prodjects__item">
+                                        <a href="https://github.com/AnPodlesnyi/Frontend_game" target="_blank">
+                                            <img src="assets/projects/Space.png" alt="projects_space"
+                                                class="projects__png">
+                                        </a>
+                                        <div class="projects__text">
+                                            <h3 class="projects__name">Game-Space_Man</h3>
+                                            <div class="projects-text__desc">
+                                                <p>The game was created using Canvas.js. Implemented two levels, a coin
+                                                    counter, player statistics through LocalStorage, as well as enemies
+                                                    to complicate.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prodjects__item">
+                                        <a href="https://anpodlesnyi.github.io/Ucode/ustore/apodlesni/" target="_blank">
+                                            <img src="assets/projects/tvShop.png" alt="projects_tvShope"
+                                                class="projects__png">
+                                        </a>
+                                        <div class="projects__text">
+                                            <h3 class="projects__name">Ustore (TV-Shop)</h3>
+                                            <div class="projects-text__desc">
+                                                <p>Online store. Teamwork. Implemented pagination, sorting, a product
+                                                    map view, product filter by three criteria, and a shopping cart with
+                                                    saving to LocalStorage.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prodjects__item">
+                                        <a href="https://anpodlesnyi.github.io/JavaScript-Intensive-Ozon/"
+                                            target="_blank">
+                                            <img src="assets/projects/ozon.png" alt="projects_ozon"
+                                                class="projects__png">
+                                        </a>
+                                        <div class="projects__text">
+                                            <h3 class="projects__name">Intensive-Ozon</h3>
+                                            <div class="projects-text__desc">
+                                                <p>Intensive on which we dismantled the work of Webpack, created a
+                                                    product catalog, a product search, and a product basket.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prodjects__item">
+                                        <a href="https://anpodlesnyi.github.io/Ucode/sprint04/apodlesni/t04_weather_forecast/"
+                                            target="_blank">
+                                            <img src="assets/projects/sinoptik.png" alt="projects_sinptik"
+                                                class="projects__png">
+                                        </a>
+                                        <div class="projects__text">
+                                            <h3 class="projects__name">Sinoptik-clone</h3>
+                                            <div class="projects-text__desc">
+                                                <p>The API asks OpenWeather to get real-time weather and search for
+                                                    weather in your city.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prodjects__item">
+                                        <a href="https://anpodlesnyi.github.io/Ucode/sprint04/apodlesni/t09_mixmagician/"
+                                            target="_blank">
+                                            <img src="assets/projects/protomagic.png" alt="projects_protomagic"
+                                                class="projects__png">
+                                        </a>
+                                        <div class="projects__text">
+                                            <h3 class="projects__name">ProtoMagician</h3>
+                                            <div class="projects-text__desc">
+                                                <p>Prototype inheritance. Inheritance of parental property. Show "Do
+                                                    magic" and "Say hello" in Console.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- <div class="maine__code">
+                            <h3 class="about-head__text">Code example</h3>
+                            <div class="separator separator__black"></div>
+                            <pre class="pre">
+                                <code class="code__text">
+<span>const</span> <span class="pre__green">getTypeOfSentence</span> = <span class="pre__yellow">(</span><span class='pre__orange'>sentence</span><span class="pre__yellow">)</span> => <span class="pre__orange">{</span>
+    <span>const</span><span class="pre__violet"> lastChar</span> = <span class="pre__orange">sentence</span><span class="pre__white">.</span><span class="pre__green">slice</span>(-<span class="pre__violet">1</span>)<span class="pre__white">;</span>
+
+    <span>return</span> (<span class="pre__violet">lastChar</span> === <span class="pre__yellow">'?'</span>) ? <span class="pre__yellow">'question'</span> : <span class="pre__yellow">'normal'</span><span class="pre__white">;</span>
+<span class="pre__orange">}</span><span class="pre__white">;</span>
+
+<span class="pre__green">getTypeOfSentence</span><span class="pre__orange">(</span><span class="pre__yellow">'Hodor'</span><span class="pre__orange">)</span><span class="pre__white">;</span>  <span class="pre__grey">// normal</span>
+<span class="pre__green">getTypeOfSentence</span><span class="pre__orange">(</span><span class="pre__yellow">'Hodor?'</span><span class="pre__orange">)</span><span class="pre__white">;</span>  <span class="pre__grey">// question</span>
+                                </code>
+                            </pre>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="container__footer">
+                <div class="footer__github">
+                    <a href="https://github.com/AnPodlesnyi" target="_blank">
+                        <img src="assets/footer__svg/github.svg" alt="git__svg" class="git__svg">
+                    </a>
+                </div>
+                <div class="footer__year">
+                    <h3>2022</h3>
+                </div>
+                <div class="footer__rss">
+                    <a href="https://www.linkedin.com/in/andrii-podlesnyi-51729521b/" target="_blank">
+                        <img src="assets/footer__svg/linkedin.png" alt="link__svg" class="rss__svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

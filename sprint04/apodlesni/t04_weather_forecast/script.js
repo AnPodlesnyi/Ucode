@@ -92,37 +92,37 @@ let formatDate = (date) => {
 let formatMounth = (date) => {
     switch (date) {
         case '01':
-            alert('Січня');
+            return 'Січня';
             break;
         case '02':
-            alert('Лютого');
+            return 'Лютого';
             break;
         case '03':
-            alert('Березня');
+            return 'Березня';
             break;
         case '04':
-            alert('Квітня');
+            return 'Квітня';
             break;
         case '05':
-            alert('Травня');
+            return 'Травня';
             break;
         case '06':
             return 'Червня';
             break;
         case '07':
-            alert('Липня');
+            return 'Липня';
             break;
         case '08':
-            alert('Серпня');
+            return 'Серпня';
             break;
         case '09':
-            alert('Вересня');
+            return 'Вересня';
             break;
         case '10':
-            alert('Жовтня');
+            return 'Жовтня';
             break;
         case '11':
-            alert('Листопада');
+            return 'Листопада';
             break;
         case '12':
             return 'Грудня';
