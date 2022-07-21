@@ -13,7 +13,7 @@ The store is built on HTML, Css, Js. No additional frameworks or libraries were 
 *  Cart with displaying the number of goods, their prices, and total cost.
 
 # You can test, see the site by the link:
-https://andrii777s.github.io/Frontend_Ustore/
+https://anpodlesnyi.github.io/Ucode/ustore/apodlesni/
 # The project was developed with the participation of:
 |Name|Email|
 |----|-----|
