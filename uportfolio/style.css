@@ -113,6 +113,55 @@ select {
   margin: 15px;
 }
 
+
+/* Стиль кнопки  */
+.header-menu__itemс {
+  display: inline-flex;
+  margin: 5px;
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px 30px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', Тahoma, sans-serif;
+  background: var(--secondary-color);
+  cursor: pointer;
+  border: 2px solid rgb(148, 147, 147);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.header-menu__itemс:hover,
+.header-menu__itemс:active,
+.header-menu__itemс:focus {
+  color: #FFF;
+}
+
+.header-menu__itemс:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid rgb(172 172 172);
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+
+.header-menu__itemс:hover:before,
+.header-menu__itemс:active:before,
+.header-menu__itemс:focus:before {
+  transform: translateX(0);
+}
+
+/*      */
+
 .header-menu__link {
   text-decoration: none;
   text-transform: uppercase;
@@ -232,9 +281,27 @@ select {
 .contacts_head {
   text-transform: uppercase;
   font-size: 28px;
-  color: var(--head-color-h3);
   margin-top: 10px;
 }
+
+.aminat span:hover {
+  background:
+    linear-gradient(var(--head-color-h3), var(--head-color-h3)) left no-repeat,
+    var(--secondary-color);
+  background-size: 0% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: loading 5s forwards linear;
+}
+
+@keyframes loading {
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
 
 .separator {
   height: 3px;
