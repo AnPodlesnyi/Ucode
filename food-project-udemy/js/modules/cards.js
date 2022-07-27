@@ -59,8 +59,9 @@ function cards() {
     //         });
     //     });
 
-    axios.get('http://localhost:3000/menu')
+    axios.get('https://foodprodject-d67f2-default-rtdb.europe-west1.firebasedatabase.app/Foods/menu.json')
         .then(data => {
+            console.log(data);
             data.data.forEach(({ img, altimg, title, descr, price }) => {
                 new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
             });

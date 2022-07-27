@@ -32,7 +32,7 @@ function form(formSelector, modalTimerId) {
 
             const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-            postData('http://localhost:3000/requests', json)
+            postData('https://foodprodject-d67f2-default-rtdb.europe-west1.firebasedatabase.app/Foods/requests.json', json)
                 .then(data => {
                     console.log(data);
                     showThanksModal(message.success);

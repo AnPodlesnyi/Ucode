@@ -197,8 +197,9 @@ function cards() {
     //         });
     //     });
 
-    axios.get('http://localhost:3000/menu')
+    axios.get('https://foodprodject-d67f2-default-rtdb.europe-west1.firebasedatabase.app/Foods/menu.json')
         .then(data => {
+            console.log(data);
             data.data.forEach(({ img, altimg, title, descr, price }) => {
                 new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
             });
@@ -256,7 +257,7 @@ function form(formSelector, modalTimerId) {
 
             const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-            (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)('http://localhost:3000/requests', json)
+            (0,_services_services__WEBPACK_IMPORTED_MODULE_1__.postData)('https://foodprodject-d67f2-default-rtdb.europe-west1.firebasedatabase.app/Foods/requests.json', json)
                 .then(data => {
                     console.log(data);
                     showThanksModal(message.success);
