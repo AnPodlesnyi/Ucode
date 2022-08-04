@@ -204,7 +204,7 @@ select {
   width: 100%;
   height: 2px;
   background-color: var(--secondary-color);
-  transition-duration: .25s;
+  transition-duration: .35s;
 }
 
 .menu__btn>span::before {
@@ -221,6 +221,8 @@ select {
   display: block;
   position: fixed;
   visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
   z-index: 1;
   top: 0;
   left: -100%;
@@ -264,6 +266,7 @@ select {
 
 #menu__toggle:checked~.menu__box {
   visibility: visible;
+  opacity: 1;
   left: 0;
 }
 
@@ -393,6 +396,10 @@ select {
   background-image: url(./assets/svg_skills/webpack.svg);
 }
 
+.react_skil {
+  background-image: url(./assets/svg_skills/react-svgrepo-com.svg);
+}
+
 td {
   padding-right: 40px;
 }
@@ -488,6 +495,11 @@ td {
   background-color: rgb(222, 222, 222);
 }
 
+.prodjects__item img {
+  object-fit: cover;
+  max-height: 205px;
+}
+
 .prodjects__item:nth-child(3n-1) {
   margin-left: 20px;
   margin-right: 20px;
@@ -545,6 +557,11 @@ td {
 .footer__year {
   margin: auto;
 }
+
+.footer__github {
+  margin-left: -15px;
+}
+
 
 @media (max-width: 1024px) {
   .prodjects__item {
